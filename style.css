@@ -116,27 +116,43 @@ header .left h1 {
     align-items: center;
     display: flex;
 }
-header .right{
+
+header .right {
     display: flex;
     justify-content: space-around;
     width: 20%;
     align-items: center;
 }
-header .right select{
+
+header .right select {
     border: none;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 
-color: #2C384F;
+    color: #2C384F;
 }
-#flag{
-    width:29px ;
+
+#flag {
+    width: 29px;
     height: 29px;
 }
-.right_one, .right_two{
+
+#notification {
+    width: 24px;
+    height: 24px;
+}
+
+#ew {
+    width: 35px;
+    height: 35px;
+}
+
+.right_one,
+.right_two {
+    width: 49%;
     display: flex;
     justify-content: space-around;
     align-items: center;
