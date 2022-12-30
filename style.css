@@ -14,8 +14,6 @@ body {
     ;
 }
 
-header,
-aside,
 main,
 main div {
     border: 1px solid black;
@@ -42,8 +40,20 @@ aside {
     grid-area: a;
 }
 
+main{
+    background-color: #E5E5E5;;
+}
+main div{
+    background: #FFFFFF;
+border-radius: 8px;
+}
 .networth {
     grid-area: n;
+    padding: 30px 10px 30px 30px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+
 }
 
 .income {
@@ -75,10 +85,11 @@ aside {
 header {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 3px 8px rgba(153, 166, 191, 0.12);
 }
 
 header .left {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +113,7 @@ header .left .left_two input {
     background-color: #F5F7FA;
     border-radius: 8px;
     margin-left: 40px;
+    border: none;
 }
 
 #sn {
@@ -176,4 +188,230 @@ header .right select {
     border: 5px;
     background-color: #784FFE;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow {
+    height: 15px;
+    width: 232px;
+    background-color: rgba(120, 79, 254, 0.36);
+    filter: blur(24px);
+}
+
+.Ethereum select {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    background-color: #784FFE;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+
+.dashboard {
+    height: 54px;
+    width: 232px;
+    background-color: rgba(120, 79, 254, 0.12);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#dlogo {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+}
+
+.dashboard p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #784FFE;
+}
+
+aside .container .bottom .items {
+    display: flex;
+    width: 80%;
+    margin-left: 20px;
+}
+
+aside .container .bottom .items p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #2C384F;
+    margin-left: 20px;
+}
+
+aside .container .bottom {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+
+aside .container {
+
+    padding: 36px 24px 0 24px;
+}
+
+/* асайд закончен. начало мейн */
+.over {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.over .settings4 {
+    width: 124px;
+    height: 38px;
+    background: #724BF2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.over .settings4 img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    margin-left: 17px;
+}
+
+.over .settings4 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.over h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #2C384F;
+}
+
+
+.networth .left {
+    margin-right: 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.networth .left .numbers {
+    margin-top: 5px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.networth .left .numbers h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #2C384F;
+    margin-right: 17px;
+}
+
+.networth .left .numbers p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    margin-left: 5px;
+
+    color: #20BF6B;
+}
+
+.networth .left .numbers img {
+    height: 13.333333969116211px;
+    width: 13.333333969116211px;
+
+
+}
+
+.networth .left>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #899BBE;
+}
+
+.networth .left .action {
+    width: 100%;
+    display: flex;
+
+}
+
+.networth .left .action .send {
+    background-color: #724BF2;
+    margin-right: 10px;
+
+}
+
+.networth .left .action .send,
+.networth .left .action .buy {
+    width: 94px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.networth .left .action .send img,
+.networth .left .action .buy img {
+    margin-right: 8px;
+}
+
+.networth .left .action .buy {
+    background-color: #ECE6FF;
+    ;
+}
+.networth .right {
+   
+    display: flex;
+    align-items: flex-end;
+    width: 49%;
+}
+
+.networth .right img {
+    width: 100%;
+    height: 92.42px;
+   
 }
